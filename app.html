@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Type Math - app</title>
+<style>
+  :root { --accent:#b0481f; --ink:#3a1808; --paper:#fdf4ee; --soft:#f8e2d4; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input, select { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #e0a888; border-radius:6px; background:#fff; color:var(--ink); }
+    .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #e0a888; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#9c6a4e; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Type Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page works out type sizes, line heights and line lengths from the numbers you type, in one unit of your choice. It does not know any screen, printer, font or reader, and it gives no verdict on whether a size, a line height or a line length is readable or good. Every number is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The scale truth</h2>
+    <p class="note">Each size is the one before it times the ratio. Give the ratio as two whole numbers with a slash, like 3/2 or 5/4.</p>
+    <div class="row3">
+      <div><label for="s-b">Base size</label><input id="s-b" type="text" value="16"></div>
+      <div><label for="s-r">Ratio</label><input id="s-r" type="text" value="3/2"></div>
+      <div><label for="s-u">Steps up</label><input id="s-u" type="text" value="5"></div>
+    </div>
+    <div class="out" id="s-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The rhythm truth</h2>
+    <p class="note">A line height as a percent of the font size, set against a baseline unit.</p>
+    <div class="row3">
+      <div><label for="h-f">Font size</label><input id="h-f" type="text" value="17"></div>
+      <div><label for="h-p">Line height %</label><input id="h-p" type="text" value="150"></div>
+      <div><label for="h-u">Baseline unit</label><input id="h-u" type="text" value="8"></div>
+    </div>
+    <div class="out" id="h-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The measure truth</h2>
+    <p class="note">How many characters fit on a line of the column, and how many lines a text takes. The character width is the average you measured, up to 2 decimals.</p>
+    <div class="row3">
+      <div><label for="m-w">Column width</label><input id="m-w" type="text" value="640"></div>
+      <div><label for="m-c">Character width</label><input id="m-c" type="text" value="8.4"></div>
+      <div><label for="m-n">Text length</label><input id="m-n" type="text" value="1200"></div>
+    </div>
+    <div class="out" id="m-out"></div>
+  </div>
+
+  <footer>Type Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("s-out", () => scaleTruth(v("s-b"), v("s-r"), v("s-u")));
+    show("h-out", () => rhythmTruth(v("h-f"), v("h-p"), v("h-u")));
+    show("m-out", () => measureTruth(v("m-w"), v("m-c"), v("m-n")));
+  }
+  document.querySelectorAll("input, select").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
