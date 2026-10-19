@@ -1,0 +1,1586 @@
+[
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   "3/2",
+   "5"
+  ],
+  "expected": "Sizes from 2 steps down to 5 steps up at ratio 3/2 on a base of 16: 7.11, 10.67, 16, 24, 36, 54, 81, 121.5."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   "5/4",
+   "3"
+  ],
+  "expected": "Sizes from 2 steps down to 3 steps up at ratio 5/4 on a base of 16: 10.24, 12.8, 16, 20, 25, 31.25."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "1",
+   "200/1",
+   "10"
+  ],
+  "expected": "Sizes from 2 steps down to 10 steps up at ratio 200/1 on a base of 1: 0, 0.01, 1, 200, 40000, 8000000, 1600000000, 320000000000, 64000000000000, 12800000000000000, 2560000000000000000, 512000000000000000000, 102400000000000000000000."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "1000",
+   "1/1",
+   "1"
+  ],
+  "expected": "Sizes from 2 steps down to 1 step up at ratio 1/1 on a base of 1000: 1000, 1000, 1000, 1000."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   "1/1",
+   "2"
+  ],
+  "expected": "Sizes from 2 steps down to 2 steps up at ratio 1/1 on a base of 16: 16, 16, 16, 16, 16."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "10",
+   "200/199",
+   "10"
+  ],
+  "expected": "Sizes from 2 steps down to 10 steps up at ratio 200/199 on a base of 10: 9.9, 9.95, 10, 10.05, 10.1, 10.15, 10.2, 10.25, 10.31, 10.36, 10.41, 10.46, 10.51."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   " 3 / 2 ",
+   "1"
+  ],
+  "expected": "Sizes from 2 steps down to 1 step up at ratio 3/2 on a base of 16: 7.11, 10.67, 16, 24."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "0",
+   "3/2",
+   "5"
+  ],
+  "expected": "ERR:the base size must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "1001",
+   "3/2",
+   "5"
+  ],
+  "expected": "ERR:the base size must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   "2/3",
+   "5"
+  ],
+  "expected": "ERR:enter the ratio as two whole numbers with a slash, like 3/2, the top at least the bottom, each from 1 to 200"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   "3/0",
+   "5"
+  ],
+  "expected": "ERR:enter the ratio as two whole numbers with a slash, like 3/2, the top at least the bottom, each from 1 to 200"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   "201/1",
+   "5"
+  ],
+  "expected": "ERR:enter the ratio as two whole numbers with a slash, like 3/2, the top at least the bottom, each from 1 to 200"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   "3/2",
+   "0"
+  ],
+  "expected": "ERR:the steps up must be a whole number from 1 to 10"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   "3/2",
+   "11"
+  ],
+  "expected": "ERR:the steps up must be a whole number from 1 to 10"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   "3-2",
+   "5"
+  ],
+  "expected": "ERR:enter the ratio as two whole numbers with a slash, like 3/2, the top at least the bottom, each from 1 to 200"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   "",
+   "5"
+  ],
+  "expected": "ERR:enter the ratio as two whole numbers with a slash, like 3/2, the top at least the bottom, each from 1 to 200"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "abc",
+   "3/2",
+   "5"
+  ],
+  "expected": "ERR:the base size must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   "1.5",
+   "5"
+  ],
+  "expected": "ERR:enter the ratio as two whole numbers with a slash, like 3/2, the top at least the bottom, each from 1 to 200"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "7",
+   "7/5",
+   "4"
+  ],
+  "expected": "Sizes from 2 steps down to 4 steps up at ratio 7/5 on a base of 7: 3.57, 5, 7, 9.8, 13.72, 19.21, 26.89."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "12",
+   "18/11",
+   "6"
+  ],
+  "expected": "Sizes from 2 steps down to 6 steps up at ratio 18/11 on a base of 12: 4.48, 7.33, 12, 19.64, 32.13, 52.58, 86.04, 140.79, 230.39."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "16",
+   "3/2",
+   "1"
+  ],
+  "expected": "Sizes from 2 steps down to 1 step up at ratio 3/2 on a base of 16: 7.11, 10.67, 16, 24."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "252",
+   "178/85",
+   "9"
+  ],
+  "expected": "Sizes from 2 steps down to 9 steps up at ratio 178/85 on a base of 252: 57.46, 120.34, 252, 527.72, 1105.1, 2314.22, 4846.24, 10148.6, 21252.35, 44504.93, 93198.55, 195168.73."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "433",
+   "165/95",
+   "5"
+  ],
+  "expected": "Sizes from 2 steps down to 5 steps up at ratio 165/95 on a base of 433: 143.54, 249.3, 433, 752.05, 1306.2, 2268.66, 3940.3, 6843.68."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "945",
+   "98/79",
+   "6"
+  ],
+  "expected": "Sizes from 2 steps down to 6 steps up at ratio 98/79 on a base of 945: 614.09, 761.79, 945, 1172.28, 1454.22, 1803.97, 2237.83, 2776.05, 3443.7."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "316",
+   "121/2",
+   "10"
+  ],
+  "expected": "Sizes from 2 steps down to 10 steps up at ratio 121/2 on a base of 316: 0.09, 5.22, 316, 19118, 1156639, 69976659.5, 4233587899.75, 256132067934.88, 15495990110059.94, 937507401658626.22, 56719197800346886.23, 3431511466920986617.18, 207606443748719690339.37."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "404",
+   "198/197",
+   "10"
+  ],
+  "expected": "Sizes from 2 steps down to 10 steps up at ratio 198/197 on a base of 404: 399.93, 401.96, 404, 406.05, 408.11, 410.18, 412.27, 414.36, 416.46, 418.58, 420.7, 422.84, 424.98."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "36",
+   "101/32",
+   "7"
+  ],
+  "expected": "Sizes from 2 steps down to 7 steps up at ratio 101/32 on a base of 36: 3.61, 11.41, 36, 113.63, 358.63, 1131.92, 3572.63, 11276.11, 35590.24, 112331.68."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "746",
+   "197/147",
+   "3"
+  ],
+  "expected": "Sizes from 2 steps down to 3 steps up at ratio 197/147 on a base of 746: 415.38, 556.66, 746, 999.74, 1339.79, 1795.5."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "186",
+   "178/101",
+   "10"
+  ],
+  "expected": "Sizes from 2 steps down to 10 steps up at ratio 178/101 on a base of 186: 59.88, 105.54, 186, 327.8, 577.71, 1018.14, 1794.35, 3162.32, 5573.2, 9822.08, 17310.2, 30507.08, 53764.95."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "376",
+   "129/95",
+   "3"
+  ],
+  "expected": "Sizes from 2 steps down to 3 steps up at ratio 129/95 on a base of 376: 203.92, 276.9, 376, 510.57, 693.3, 941.43."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "955",
+   "92/31",
+   "10"
+  ],
+  "expected": "Sizes from 2 steps down to 10 steps up at ratio 92/31 on a base of 955: 108.43, 321.79, 955, 2834.19, 8411.16, 24962.14, 74081.18, 219853.83, 652469.44, 1936360.91, 5746619.47, 17054483.58, 50613306.1."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "554",
+   "159/62",
+   "1"
+  ],
+  "expected": "Sizes from 2 steps down to 1 step up at ratio 159/62 on a base of 554: 84.24, 216.03, 554, 1420.74."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "612",
+   "168/133",
+   "9"
+  ],
+  "expected": "Sizes from 2 steps down to 9 steps up at ratio 168/133 on a base of 612: 383.56, 484.5, 612, 773.05, 976.49, 1233.46, 1558.05, 1968.07, 2485.98, 3140.18, 3966.55, 5010.37."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "496",
+   "200/198",
+   "9"
+  ],
+  "expected": "Sizes from 2 steps down to 9 steps up at ratio 200/198 on a base of 496: 486.13, 491.04, 496, 501.01, 506.07, 511.18, 516.35, 521.56, 526.83, 532.15, 537.53, 542.96."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "817",
+   "187/150",
+   "4"
+  ],
+  "expected": "Sizes from 2 steps down to 4 steps up at ratio 187/150 on a base of 817: 525.68, 655.35, 817, 1018.53, 1269.76, 1582.97, 1973.44."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "308",
+   "191/127",
+   "8"
+  ],
+  "expected": "Sizes from 2 steps down to 8 steps up at ratio 191/127 on a base of 308: 136.17, 204.8, 308, 463.21, 696.64, 1047.71, 1575.68, 2369.73, 3563.93, 5359.92, 8060.98."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "94",
+   "140/80",
+   "7"
+  ],
+  "expected": "Sizes from 2 steps down to 7 steps up at ratio 140/80 on a base of 94: 30.69, 53.71, 94, 164.5, 287.88, 503.78, 881.62, 1542.83, 2699.95, 4724.92."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "620",
+   "176/57",
+   "2"
+  ],
+  "expected": "Sizes from 2 steps down to 2 steps up at ratio 176/57 on a base of 620: 65.03, 200.8, 620, 1914.39, 5911.09."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "695",
+   "165/23",
+   "6"
+  ],
+  "expected": "Sizes from 2 steps down to 6 steps up at ratio 165/23 on a base of 695: 13.5, 96.88, 695, 4985.87, 35768.19, 256597.92, 1840811.15, 13205819.15, 94737398.28."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "731",
+   "128/118",
+   "5"
+  ],
+  "expected": "Sizes from 2 steps down to 5 steps up at ratio 128/118 on a base of 731: 621.24, 673.89, 731, 792.95, 860.15, 933.04, 1012.11, 1097.89."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "27",
+   "142/39",
+   "2"
+  ],
+  "expected": "Sizes from 2 steps down to 2 steps up at ratio 142/39 on a base of 27: 2.04, 7.42, 27, 98.31, 357.94."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "828",
+   "146/74",
+   "5"
+  ],
+  "expected": "Sizes from 2 steps down to 5 steps up at ratio 146/74 on a base of 828: 212.71, 419.67, 828, 1633.62, 3223.09, 6359.07, 12546.28, 24753.47."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "134",
+   "90/56",
+   "8"
+  ],
+  "expected": "Sizes from 2 steps down to 8 steps up at ratio 90/56 on a base of 134: 51.88, 83.38, 134, 215.36, 346.11, 556.25, 893.97, 1436.74, 2309.04, 3710.96, 5964.04."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "569",
+   "187/169",
+   "3"
+  ],
+  "expected": "Sizes from 2 steps down to 3 steps up at ratio 187/169 on a base of 569: 464.73, 514.23, 569, 629.6, 696.66, 770.86."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "641",
+   "130/47",
+   "9"
+  ],
+  "expected": "Sizes from 2 steps down to 9 steps up at ratio 130/47 on a base of 641: 83.79, 231.75, 641, 1772.98, 4903.98, 13564.21, 37518.03, 103773.27, 287032.45, 793919.54, 2195947.66, 6073897.78."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "375",
+   "188/152",
+   "4"
+  ],
+  "expected": "Sizes from 2 steps down to 4 steps up at ratio 188/152 on a base of 375: 245.13, 303.19, 375, 463.82, 573.67, 709.54, 877.58."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "250",
+   "123/50",
+   "2"
+  ],
+  "expected": "Sizes from 2 steps down to 2 steps up at ratio 123/50 on a base of 250: 41.31, 101.63, 250, 615, 1512.9."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "555",
+   "102/90",
+   "6"
+  ],
+  "expected": "Sizes from 2 steps down to 6 steps up at ratio 102/90 on a base of 555: 432.09, 489.71, 555, 629, 712.87, 807.92, 915.64, 1037.72, 1176.09."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "970",
+   "132/118",
+   "7"
+  ],
+  "expected": "Sizes from 2 steps down to 7 steps up at ratio 132/118 on a base of 970: 775.15, 867.12, 970, 1085.08, 1213.82, 1357.84, 1518.94, 1699.15, 1900.74, 2126.25."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "870",
+   "195/194",
+   "10"
+  ],
+  "expected": "Sizes from 2 steps down to 10 steps up at ratio 195/194 on a base of 870: 861.1, 865.54, 870, 874.48, 878.99, 883.52, 888.08, 892.66, 897.26, 901.88, 906.53, 911.2, 915.9."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   "651",
+   "172/150",
+   "4"
+  ],
+  "expected": "Sizes from 2 steps down to 4 steps up at ratio 172/150 on a base of 651: 495.12, 567.73, 651, 746.48, 855.96, 981.51, 1125.46."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "17",
+   "150",
+   "8"
+  ],
+  "expected": "A 17 font at 150% line height has a 25.5 line on a baseline unit of 8: that is 3.19 units. The next whole-unit line height is 32, which is 188.24% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "16",
+   "150",
+   "8"
+  ],
+  "expected": "A 16 font at 150% line height has a 24 line on a baseline unit of 8: that is exactly 3 units."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "16",
+   "150",
+   "24"
+  ],
+  "expected": "A 16 font at 150% line height has a 24 line on a baseline unit of 24: that is exactly 1 unit."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "16",
+   "100",
+   "16"
+  ],
+  "expected": "A 16 font at 100% line height has a 16 line on a baseline unit of 16: that is exactly 1 unit."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "1",
+   "1",
+   "1000"
+  ],
+  "expected": "A 1 font at 1% line height has a 0.01 line on a baseline unit of 1000: that is 0 units. The next whole-unit line height is 1000, which is 100000% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "1000",
+   "1000",
+   "1"
+  ],
+  "expected": "A 1000 font at 1000% line height has a 10000 line on a baseline unit of 1: that is exactly 10000 units."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "1000",
+   "1000",
+   "1000"
+  ],
+  "expected": "A 1000 font at 1000% line height has a 10000 line on a baseline unit of 1000: that is exactly 10 units."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "10",
+   "99",
+   "1"
+  ],
+  "expected": "A 10 font at 99% line height has a 9.9 line on a baseline unit of 1: that is 9.9 units. The next whole-unit line height is 10, which is 100% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "10",
+   "100",
+   "10"
+  ],
+  "expected": "A 10 font at 100% line height has a 10 line on a baseline unit of 10: that is exactly 1 unit."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "3",
+   "333",
+   "1"
+  ],
+  "expected": "A 3 font at 333% line height has a 9.99 line on a baseline unit of 1: that is 9.99 units. The next whole-unit line height is 10, which is 333.33% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "0",
+   "150",
+   "8"
+  ],
+  "expected": "ERR:the font size must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "16",
+   "0",
+   "8"
+  ],
+  "expected": "ERR:the line height percent must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "16",
+   "150",
+   "0"
+  ],
+  "expected": "ERR:the baseline unit must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "1001",
+   "150",
+   "8"
+  ],
+  "expected": "ERR:the font size must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "16",
+   "1001",
+   "8"
+  ],
+  "expected": "ERR:the line height percent must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "16",
+   "150",
+   "1001"
+  ],
+  "expected": "ERR:the baseline unit must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "x",
+   "150",
+   "8"
+  ],
+  "expected": "ERR:the font size must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   " 17 ",
+   " 150 ",
+   " 8 "
+  ],
+  "expected": "A 17 font at 150% line height has a 25.5 line on a baseline unit of 8: that is 3.19 units. The next whole-unit line height is 32, which is 188.24% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "16",
+   "",
+   "8"
+  ],
+  "expected": "ERR:the line height percent must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "20",
+   "125",
+   "4"
+  ],
+  "expected": "A 20 font at 125% line height has a 25 line on a baseline unit of 4: that is 6.25 units. The next whole-unit line height is 28, which is 140% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "7",
+   "143",
+   "3"
+  ],
+  "expected": "A 7 font at 143% line height has a 10.01 line on a baseline unit of 3: that is 3.34 units. The next whole-unit line height is 12, which is 171.43% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "61",
+   "139",
+   "32"
+  ],
+  "expected": "A 61 font at 139% line height has a 84.79 line on a baseline unit of 32: that is 2.65 units. The next whole-unit line height is 96, which is 157.38% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "22",
+   "136",
+   "21"
+  ],
+  "expected": "A 22 font at 136% line height has a 29.92 line on a baseline unit of 21: that is 1.42 units. The next whole-unit line height is 42, which is 190.91% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "24",
+   "278",
+   "23"
+  ],
+  "expected": "A 24 font at 278% line height has a 66.72 line on a baseline unit of 23: that is 2.9 units. The next whole-unit line height is 69, which is 287.5% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "41",
+   "273",
+   "32"
+  ],
+  "expected": "A 41 font at 273% line height has a 111.93 line on a baseline unit of 32: that is 3.5 units. The next whole-unit line height is 128, which is 312.2% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "97",
+   "149",
+   "11"
+  ],
+  "expected": "A 97 font at 149% line height has a 144.53 line on a baseline unit of 11: that is 13.14 units. The next whole-unit line height is 154, which is 158.76% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "61",
+   "171",
+   "10"
+  ],
+  "expected": "A 61 font at 171% line height has a 104.31 line on a baseline unit of 10: that is 10.43 units. The next whole-unit line height is 110, which is 180.33% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "46",
+   "82",
+   "27"
+  ],
+  "expected": "A 46 font at 82% line height has a 37.72 line on a baseline unit of 27: that is 1.4 units. The next whole-unit line height is 54, which is 117.39% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "13",
+   "193",
+   "37"
+  ],
+  "expected": "A 13 font at 193% line height has a 25.09 line on a baseline unit of 37: that is 0.68 units. The next whole-unit line height is 37, which is 284.62% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "96",
+   "81",
+   "27"
+  ],
+  "expected": "A 96 font at 81% line height has a 77.76 line on a baseline unit of 27: that is 2.88 units. The next whole-unit line height is 81, which is 84.38% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "15",
+   "179",
+   "29"
+  ],
+  "expected": "A 15 font at 179% line height has a 26.85 line on a baseline unit of 29: that is 0.93 units. The next whole-unit line height is 29, which is 193.33% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "7",
+   "300",
+   "27"
+  ],
+  "expected": "A 7 font at 300% line height has a 21 line on a baseline unit of 27: that is 0.78 units. The next whole-unit line height is 27, which is 385.71% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "85",
+   "83",
+   "26"
+  ],
+  "expected": "A 85 font at 83% line height has a 70.55 line on a baseline unit of 26: that is 2.71 units. The next whole-unit line height is 78, which is 91.76% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "5",
+   "229",
+   "3"
+  ],
+  "expected": "A 5 font at 229% line height has a 11.45 line on a baseline unit of 3: that is 3.82 units. The next whole-unit line height is 12, which is 240% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "57",
+   "132",
+   "15"
+  ],
+  "expected": "A 57 font at 132% line height has a 75.24 line on a baseline unit of 15: that is 5.02 units. The next whole-unit line height is 90, which is 157.89% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "80",
+   "283",
+   "17"
+  ],
+  "expected": "A 80 font at 283% line height has a 226.4 line on a baseline unit of 17: that is 13.32 units. The next whole-unit line height is 238, which is 297.5% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "94",
+   "282",
+   "39"
+  ],
+  "expected": "A 94 font at 282% line height has a 265.08 line on a baseline unit of 39: that is 6.8 units. The next whole-unit line height is 273, which is 290.43% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "58",
+   "293",
+   "40"
+  ],
+  "expected": "A 58 font at 293% line height has a 169.94 line on a baseline unit of 40: that is 4.25 units. The next whole-unit line height is 200, which is 344.83% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "44",
+   "245",
+   "28"
+  ],
+  "expected": "A 44 font at 245% line height has a 107.8 line on a baseline unit of 28: that is 3.85 units. The next whole-unit line height is 112, which is 254.55% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "64",
+   "105",
+   "19"
+  ],
+  "expected": "A 64 font at 105% line height has a 67.2 line on a baseline unit of 19: that is 3.54 units. The next whole-unit line height is 76, which is 118.75% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "67",
+   "222",
+   "14"
+  ],
+  "expected": "A 67 font at 222% line height has a 148.74 line on a baseline unit of 14: that is 10.62 units. The next whole-unit line height is 154, which is 229.85% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "57",
+   "176",
+   "34"
+  ],
+  "expected": "A 57 font at 176% line height has a 100.32 line on a baseline unit of 34: that is 2.95 units. The next whole-unit line height is 102, which is 178.95% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "25",
+   "82",
+   "4"
+  ],
+  "expected": "A 25 font at 82% line height has a 20.5 line on a baseline unit of 4: that is 5.13 units. The next whole-unit line height is 24, which is 96% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "61",
+   "213",
+   "12"
+  ],
+  "expected": "A 61 font at 213% line height has a 129.93 line on a baseline unit of 12: that is 10.83 units. The next whole-unit line height is 132, which is 216.39% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "100",
+   "261",
+   "35"
+  ],
+  "expected": "A 100 font at 261% line height has a 261 line on a baseline unit of 35: that is 7.46 units. The next whole-unit line height is 280, which is 280% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "38",
+   "272",
+   "38"
+  ],
+  "expected": "A 38 font at 272% line height has a 103.36 line on a baseline unit of 38: that is 2.72 units. The next whole-unit line height is 114, which is 300% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "94",
+   "242",
+   "16"
+  ],
+  "expected": "A 94 font at 242% line height has a 227.48 line on a baseline unit of 16: that is 14.22 units. The next whole-unit line height is 240, which is 255.32% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "24",
+   "190",
+   "23"
+  ],
+  "expected": "A 24 font at 190% line height has a 45.6 line on a baseline unit of 23: that is 1.98 units. The next whole-unit line height is 46, which is 191.67% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "63",
+   "265",
+   "1"
+  ],
+  "expected": "A 63 font at 265% line height has a 166.95 line on a baseline unit of 1: that is 166.95 units. The next whole-unit line height is 167, which is 265.08% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "75",
+   "109",
+   "14"
+  ],
+  "expected": "A 75 font at 109% line height has a 81.75 line on a baseline unit of 14: that is 5.84 units. The next whole-unit line height is 84, which is 112% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "53",
+   "254",
+   "18"
+  ],
+  "expected": "A 53 font at 254% line height has a 134.62 line on a baseline unit of 18: that is 7.48 units. The next whole-unit line height is 144, which is 271.7% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "9",
+   "90",
+   "8"
+  ],
+  "expected": "A 9 font at 90% line height has a 8.1 line on a baseline unit of 8: that is 1.01 units. The next whole-unit line height is 16, which is 177.78% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "61",
+   "118",
+   "13"
+  ],
+  "expected": "A 61 font at 118% line height has a 71.98 line on a baseline unit of 13: that is 5.54 units. The next whole-unit line height is 78, which is 127.87% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "61",
+   "102",
+   "14"
+  ],
+  "expected": "A 61 font at 102% line height has a 62.22 line on a baseline unit of 14: that is 4.44 units. The next whole-unit line height is 70, which is 114.75% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "11",
+   "83",
+   "22"
+  ],
+  "expected": "A 11 font at 83% line height has a 9.13 line on a baseline unit of 22: that is 0.42 units. The next whole-unit line height is 22, which is 200% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "28",
+   "120",
+   "8"
+  ],
+  "expected": "A 28 font at 120% line height has a 33.6 line on a baseline unit of 8: that is 4.2 units. The next whole-unit line height is 40, which is 142.86% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "46",
+   "163",
+   "30"
+  ],
+  "expected": "A 46 font at 163% line height has a 74.98 line on a baseline unit of 30: that is 2.5 units. The next whole-unit line height is 90, which is 195.65% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "22",
+   "229",
+   "35"
+  ],
+  "expected": "A 22 font at 229% line height has a 50.38 line on a baseline unit of 35: that is 1.44 units. The next whole-unit line height is 70, which is 318.18% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "2",
+   "162",
+   "12"
+  ],
+  "expected": "A 2 font at 162% line height has a 3.24 line on a baseline unit of 12: that is 0.27 units. The next whole-unit line height is 12, which is 600% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "13",
+   "65",
+   "17"
+  ],
+  "expected": "A 13 font at 65% line height has a 8.45 line on a baseline unit of 17: that is 0.5 units. The next whole-unit line height is 17, which is 130.77% of the font size."
+ },
+ {
+  "fn": "rhythmTruth",
+  "args": [
+   "36",
+   "255",
+   "26"
+  ],
+  "expected": "A 36 font at 255% line height has a 91.8 line on a baseline unit of 26: that is 3.53 units. The next whole-unit line height is 104, which is 288.89% of the font size."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "8.4",
+   "1200"
+  ],
+  "expected": "A column 640 wide at 8.4 per character holds 76 characters per line. A text of 1200 characters takes 16 lines, and the last line holds 60."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "8",
+   "1280"
+  ],
+  "expected": "A column 640 wide at 8 per character holds 80 characters per line. A text of 1280 characters takes 16 lines, and the last line holds 80."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "8",
+   "1281"
+  ],
+  "expected": "A column 640 wide at 8 per character holds 80 characters per line. A text of 1281 characters takes 17 lines, and the last line holds 1."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "8",
+   "1"
+  ],
+  "expected": "A column 640 wide at 8 per character holds 80 characters per line. A text of 1 character takes 1 line, and the last line holds 1."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "5",
+   "8.4",
+   "100"
+  ],
+  "expected": "A column 5 wide at 8.4 per character holds 0 characters per line, so no text fits."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "8",
+   "8",
+   "8"
+  ],
+  "expected": "A column 8 wide at 8 per character holds 1 character per line. A text of 8 characters takes 8 lines, and the last line holds 1."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "7",
+   "8",
+   "8"
+  ],
+  "expected": "A column 7 wide at 8 per character holds 0 characters per line, so no text fits."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "10000",
+   "0.01",
+   "1000000"
+  ],
+  "expected": "A column 10000 wide at 0.01 per character holds 1000000 characters per line. A text of 1000000 characters takes 1 line, and the last line holds 1000000."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "10000",
+   "999.99",
+   "5"
+  ],
+  "expected": "A column 10000 wide at 999.99 per character holds 10 characters per line. A text of 5 characters takes 1 line, and the last line holds 5."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "8.40",
+   "1200"
+  ],
+  "expected": "A column 640 wide at 8.4 per character holds 76 characters per line. A text of 1200 characters takes 16 lines, and the last line holds 60."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "08.4",
+   "1200"
+  ],
+  "expected": "A column 640 wide at 8.4 per character holds 76 characters per line. A text of 1200 characters takes 16 lines, and the last line holds 60."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "0",
+   "8.4",
+   "1200"
+  ],
+  "expected": "ERR:the column width must be a whole number from 1 to 10000"
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "10001",
+   "8.4",
+   "1200"
+  ],
+  "expected": "ERR:the column width must be a whole number from 1 to 10000"
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "0",
+   "1200"
+  ],
+  "expected": "ERR:the character width must be a number above 0 and up to 999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "0.00",
+   "1200"
+  ],
+  "expected": "ERR:the character width must be a number above 0 and up to 999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "1000",
+   "1200"
+  ],
+  "expected": "ERR:the character width must be a number above 0 and up to 999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "8.456",
+   "1200"
+  ],
+  "expected": "ERR:the character width must be a number above 0 and up to 999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "-8",
+   "1200"
+  ],
+  "expected": "ERR:the character width must be a number above 0 and up to 999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "8.",
+   "1200"
+  ],
+  "expected": "ERR:the character width must be a number above 0 and up to 999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   ".5",
+   "1200"
+  ],
+  "expected": "ERR:the character width must be a number above 0 and up to 999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "8.4",
+   "0"
+  ],
+  "expected": "ERR:the text length must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "640",
+   "8.4",
+   "1000001"
+  ],
+  "expected": "ERR:the text length must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   " 640 ",
+   " 8.4 ",
+   " 1200 "
+  ],
+  "expected": "A column 640 wide at 8.4 per character holds 76 characters per line. A text of 1200 characters takes 16 lines, and the last line holds 60."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "x",
+   "8.4",
+   "1200"
+  ],
+  "expected": "ERR:the column width must be a whole number from 1 to 10000"
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "51",
+   "6.13",
+   "1851"
+  ],
+  "expected": "A column 51 wide at 6.13 per character holds 8 characters per line. A text of 1851 characters takes 232 lines, and the last line holds 3."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1068",
+   "12.51",
+   "98"
+  ],
+  "expected": "A column 1068 wide at 12.51 per character holds 85 characters per line. A text of 98 characters takes 2 lines, and the last line holds 13."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "416",
+   "12.23",
+   "2080"
+  ],
+  "expected": "A column 416 wide at 12.23 per character holds 34 characters per line. A text of 2080 characters takes 62 lines, and the last line holds 6."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "429",
+   "23.27",
+   "274"
+  ],
+  "expected": "A column 429 wide at 23.27 per character holds 18 characters per line. A text of 274 characters takes 16 lines, and the last line holds 4."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1374",
+   "24.49",
+   "1307"
+  ],
+  "expected": "A column 1374 wide at 24.49 per character holds 56 characters per line. A text of 1307 characters takes 24 lines, and the last line holds 19."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "34",
+   "6.40",
+   "4182"
+  ],
+  "expected": "A column 34 wide at 6.4 per character holds 5 characters per line. A text of 4182 characters takes 837 lines, and the last line holds 2."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1713",
+   "30.75",
+   "249"
+  ],
+  "expected": "A column 1713 wide at 30.75 per character holds 55 characters per line. A text of 249 characters takes 5 lines, and the last line holds 29."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "511",
+   "30.61",
+   "2256"
+  ],
+  "expected": "A column 511 wide at 30.61 per character holds 16 characters per line. A text of 2256 characters takes 141 lines, and the last line holds 16."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1077",
+   "26.72",
+   "1565"
+  ],
+  "expected": "A column 1077 wide at 26.72 per character holds 40 characters per line. A text of 1565 characters takes 40 lines, and the last line holds 5."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "20",
+   "16.67",
+   "367"
+  ],
+  "expected": "A column 20 wide at 16.67 per character holds 1 character per line. A text of 367 characters takes 367 lines, and the last line holds 1."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "289",
+   "16.30",
+   "4650"
+  ],
+  "expected": "A column 289 wide at 16.3 per character holds 17 characters per line. A text of 4650 characters takes 274 lines, and the last line holds 9."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1164",
+   "23.69",
+   "4130"
+  ],
+  "expected": "A column 1164 wide at 23.69 per character holds 49 characters per line. A text of 4130 characters takes 85 lines, and the last line holds 14."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1927",
+   "25.31",
+   "4952"
+  ],
+  "expected": "A column 1927 wide at 25.31 per character holds 76 characters per line. A text of 4952 characters takes 66 lines, and the last line holds 12."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "452",
+   "26.10",
+   "4401"
+  ],
+  "expected": "A column 452 wide at 26.1 per character holds 17 characters per line. A text of 4401 characters takes 259 lines, and the last line holds 15."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "855",
+   "22.81",
+   "1265"
+  ],
+  "expected": "A column 855 wide at 22.81 per character holds 37 characters per line. A text of 1265 characters takes 35 lines, and the last line holds 7."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "107",
+   "3.09",
+   "17"
+  ],
+  "expected": "A column 107 wide at 3.09 per character holds 34 characters per line. A text of 17 characters takes 1 line, and the last line holds 17."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "249",
+   "12.90",
+   "1798"
+  ],
+  "expected": "A column 249 wide at 12.9 per character holds 19 characters per line. A text of 1798 characters takes 95 lines, and the last line holds 12."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1396",
+   "28.72",
+   "2021"
+  ],
+  "expected": "A column 1396 wide at 28.72 per character holds 48 characters per line. A text of 2021 characters takes 43 lines, and the last line holds 5."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1250",
+   "1.72",
+   "4138"
+  ],
+  "expected": "A column 1250 wide at 1.72 per character holds 726 characters per line. A text of 4138 characters takes 6 lines, and the last line holds 508."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1038",
+   "9.25",
+   "4461"
+  ],
+  "expected": "A column 1038 wide at 9.25 per character holds 112 characters per line. A text of 4461 characters takes 40 lines, and the last line holds 93."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "992",
+   "11.29",
+   "1865"
+  ],
+  "expected": "A column 992 wide at 11.29 per character holds 87 characters per line. A text of 1865 characters takes 22 lines, and the last line holds 38."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1352",
+   "3.95",
+   "2824"
+  ],
+  "expected": "A column 1352 wide at 3.95 per character holds 342 characters per line. A text of 2824 characters takes 9 lines, and the last line holds 88."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "734",
+   "17.64",
+   "486"
+  ],
+  "expected": "A column 734 wide at 17.64 per character holds 41 characters per line. A text of 486 characters takes 12 lines, and the last line holds 35."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1347",
+   "8.78",
+   "4394"
+  ],
+  "expected": "A column 1347 wide at 8.78 per character holds 153 characters per line. A text of 4394 characters takes 29 lines, and the last line holds 110."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1244",
+   "13.58",
+   "708"
+  ],
+  "expected": "A column 1244 wide at 13.58 per character holds 91 characters per line. A text of 708 characters takes 8 lines, and the last line holds 71."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1184",
+   "7.14",
+   "4623"
+  ],
+  "expected": "A column 1184 wide at 7.14 per character holds 165 characters per line. A text of 4623 characters takes 29 lines, and the last line holds 3."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1239",
+   "10.80",
+   "359"
+  ],
+  "expected": "A column 1239 wide at 10.8 per character holds 114 characters per line. A text of 359 characters takes 4 lines, and the last line holds 17."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1514",
+   "9.03",
+   "1352"
+  ],
+  "expected": "A column 1514 wide at 9.03 per character holds 167 characters per line. A text of 1352 characters takes 9 lines, and the last line holds 16."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "880",
+   "21.50",
+   "1614"
+  ],
+  "expected": "A column 880 wide at 21.5 per character holds 40 characters per line. A text of 1614 characters takes 41 lines, and the last line holds 14."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1051",
+   "7.24",
+   "220"
+  ],
+  "expected": "A column 1051 wide at 7.24 per character holds 145 characters per line. A text of 220 characters takes 2 lines, and the last line holds 75."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "904",
+   "27.06",
+   "372"
+  ],
+  "expected": "A column 904 wide at 27.06 per character holds 33 characters per line. A text of 372 characters takes 12 lines, and the last line holds 9."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "304",
+   "14.36",
+   "2664"
+  ],
+  "expected": "A column 304 wide at 14.36 per character holds 21 characters per line. A text of 2664 characters takes 127 lines, and the last line holds 18."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "727",
+   "10.72",
+   "4210"
+  ],
+  "expected": "A column 727 wide at 10.72 per character holds 67 characters per line. A text of 4210 characters takes 63 lines, and the last line holds 56."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "61",
+   "22.49",
+   "1863"
+  ],
+  "expected": "A column 61 wide at 22.49 per character holds 2 characters per line. A text of 1863 characters takes 932 lines, and the last line holds 1."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1287",
+   "23.23",
+   "1797"
+  ],
+  "expected": "A column 1287 wide at 23.23 per character holds 55 characters per line. A text of 1797 characters takes 33 lines, and the last line holds 37."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1925",
+   "11.45",
+   "583"
+  ],
+  "expected": "A column 1925 wide at 11.45 per character holds 168 characters per line. A text of 583 characters takes 4 lines, and the last line holds 79."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1166",
+   "8.10",
+   "1286"
+  ],
+  "expected": "A column 1166 wide at 8.1 per character holds 143 characters per line. A text of 1286 characters takes 9 lines, and the last line holds 142."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "450",
+   "30.60",
+   "1153"
+  ],
+  "expected": "A column 450 wide at 30.6 per character holds 14 characters per line. A text of 1153 characters takes 83 lines, and the last line holds 5."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "331",
+   "22.83",
+   "388"
+  ],
+  "expected": "A column 331 wide at 22.83 per character holds 14 characters per line. A text of 388 characters takes 28 lines, and the last line holds 10."
+ },
+ {
+  "fn": "measureTruth",
+  "args": [
+   "1658",
+   "8.36",
+   "853"
+  ],
+  "expected": "A column 1658 wide at 8.36 per character holds 198 characters per line. A text of 853 characters takes 5 lines, and the last line holds 61."
+ }
+]
